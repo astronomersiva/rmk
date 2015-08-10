@@ -11,7 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" href="stylesheets/ca.css">
       <link rel="stylesheet" href="stylesheets/responsive.css">
-      
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -23,14 +25,16 @@
 		<div id="menu_icon"></div>
 		<nav>
 			<ul class="ca-menu1">
-				<li class="ca-main1"><a href="index.html">Home</a></li>
-				<li><a href="#topics">Topics</a></li>
-				<li><a href="#rules">Rules</a></li>
-				<li><a href="#team">The Team</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li class="ca-main1"><a href="index.html" style="text-decoration:none">Home</a></li>
+				<li class="active"><a data-toggle="pill" href="#home" style="text-decoration:none">About</a></li>
+                                <li><a data-toggle="pill" href="#menu1" style="text-decoration:none">Topics</a></li>
+				<li><a data-toggle="pill" href="#menu2" style="text-decoration:none">Rules</a></li>
+				<li><a data-toggle="pill" href="#menu3" style="text-decoration:none">The Team</a></li>
+				<li><a href="contact.html" style="text-decoration:none">Contact Us</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
+		
 		<div class="footer clearfix">
 						<div class="rights">
 				<p>Copyright© Cynapse 2k15.</p>
@@ -41,13 +45,13 @@
 
 	<section class="main clearfix">
 
-		<section class="top">	
+        <section class="top">	
 			<div class="wrapper content_header clearfix">
 				<div class="work_nav">
 							
 					<ul class="btn clearfix">
 						<li><a href="online.html" class="previous" data-title="Previous"></a></li>
-						<li><a href="index.html" class="grid" data-title="Home page"></a></li>
+						<li><a href="index.html" class="grid" data-title="Home"></a></li>
 						<li><a href="Codedebug.html" class="next" data-title="Next"></a></li>
 					</ul>							
 					
@@ -57,14 +61,22 @@
 		</section><!-- end top -->
 
 		<section class="wrapper">
-			<div class="content">
-                     <h2><i>A PEN IS MIGHTIER THAN THE SWORD AND A WORD IS MIGHTIER THAN THE PEN</i></h2>
-				<p align="justify">An event which is almost inevitable in any symposium which is organised by any college or university. It is tough to imagine a symposium without the traditional paper presentation event. Sticking to the traditional roots, we filter the best papers based upon the abstracts we receive and then we give a chance for the aspiring minds to express their innovative ideas on the big stage.</p>
-		
-				<p align="justify"> Last year, we received  a great response for this event and this year we will ensure that the response will be on the lines of last year, if not better than that. </p>
 
-				<h2 align="center"><i><a name="topics">TOPICS</a></i></h2>
-				<p align="justify">The idea must be related to but not limited to the following:</p>
+<div class="container">
+  
+  <div class="tab-content">
+    <div id="home" class="col-md-9 content tab-pane fade in active">
+                     <h2><i>A PEN IS MIGHTIER THAN THE SWORD AND A WORD IS MIGHTIER THAN THE PEN</i></h2>
+                <p align="justify">An event which is almost inevitable in any symposium which is organised by any college or university. It is tough to imagine a symposium without the traditional paper presentation event. Sticking to the traditional roots, we filter the best papers based upon the abstracts we receive and then we give a chance for the aspiring minds to express their innovative ideas on the big stage.</p>
+        
+                <p align="justify"> Last year, we received  a great response for this event and this year we will ensure that the response will be on the lines of last year, if not better than that. </p>
+
+    
+    </div>
+    <div id="menu1" class="col-md-9 content tab-pane fade">
+      
+                    <h2 align="center"><i><a name="topics">TOPICS</a></i></h2>
+                <p align="justify">The idea must be related to but not limited to the following:</p>
                      <ul>
                      
                      <li>
@@ -92,9 +104,13 @@
                      <li>
                          <h3> Natural Language Processing </h3>                </li>
                      </ul>
+    
+    </div>
+    <div id="menu2" class="col-md-9 content tab-pane fade">
+      
                      <h2 align="center"><i><a name="rules">RULES</a></i></h2>
                      <br>
-				<p align="center"><b>Before the Event</b></p>
+                <p align="center"><b>Before the Event</b></p>
                      <ol>
                          <li> The abstract has to be submitted first based on the topics given above for review. </li>
                          <li> The abstract should be a passage describing about what the innovation is all about. </li>
@@ -129,11 +145,18 @@
                      <br>
                      <p align="center"><b> Important Dates</b></p>
                      <p align="justify"> Last date to submit abstract is 15<sup>th</sup> of August 2015 and the last date to submit the full paper will be intimated soon. </p>      
-                                         
+    
+    </div>
+    <div id="menu3" class="col-md-9 content tab-pane fade">
+      
+                                     
                      <h2 align="center"><i><a name="team">THE TEAM</a></i></h2>
                      <p align="justify">To be decided soon.</p>
 
-			</div><!-- end content -->
+    
+    </div>
+  </div>
+</div>
 		</section>
 	</section><!-- end main -->
 	
