@@ -840,7 +840,7 @@ a:focus { outline: none }
 .back-top a { width: 50px; nowhitespace: afterproperty; height: 50px; display: block; text-align: center; text-transform: uppercase; text-decoration: none; background: #333 url(../images/up-arrow.png) no-repeat center center; border-radius: 5px; /* transition */ -webkit-transition: 1s;-moz-transition:1s;transition:1s; ; }
 .back-top a:hover { background-color: #333 } /* arrow icon (span tag) */
 .back-top span { width: 50px; nowhitespace: afterproperty; height: 50px; display: block; border-radius: 10px; /* transition */ -webkit-transition: 1s;-moz-transition:1s;transition:1s; ; }
-.minipause { height: 13px }
+.minipause { height: 13px; background-color: #64B5F6; }
 .smoothborder { border: 1px solid #CCC !important }
 .blogstyle { padding: 22px 50px 23px 50px !important }
 .blogimage { width: 99.9% }
